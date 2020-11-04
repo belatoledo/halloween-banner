@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.sec1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("/images/bg.jpg") center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sec1 h2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 100px;
+    font-size: 5em;
+    font-family: 'Syne Tactile', cursive;
+    color: orangered;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    animation:  animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+    0% 
+    {
+        transform: translate(10px,10px);
+    }
+
+    50% 
+    {
+        transform: translate(20px,20px);
+    }
+
+    100% 
+    {
+        transform: translate(10px,10px);
+    }
+}
+
+.cat {
+    position: absolute;
+    width: 120px;
+    width: 120px;
+    bottom: -15px;
+    left: 430px;
+}
+
+.border {
+    position: relative;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 73px;
+    top: 0;
+    background: url("/images/border.png");
+    background-size: cover;
+
+}
+
+.sec2 h3 {
+    padding: 0 10px 10px 0;
+    margin: 8px 0;
+    text-transform: uppercase;
+    color: darkorange;
+}
+
+.sec2 {
+    padding: 30px 100px;
+    position: relative;
+    height: auto;
+    background: #3b1e36;
+    color: whitesmoke;
+    font-family: 'Epilogue',sans-serif;
+    line-height: 25px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.sec2 h6, a {
+    font-family: 'Epilogue', sans-serif;
+    color: lime;
+    letter-spacing: 1px;
+}
+
+.sec2 a:hover {
+    color: limegreen;
+}
+
+.witch1 {
+    position: absolute;
+    width: 200px;
+    width: 200px;
+    bottom: -100px;
+    left: -100px;
+
+    animation: witch1-move 3s linear infinite;
+}
+
+@keyframes witch1-move {
+    0%
+    {
+        transform: translate(0, 0);
+    }
+
+    50%
+    {
+        transform: translate(1500px, -600px);
+    }
+
+    50.1%, 100%
+    {
+        transform: translate(1500px, -600px);
+    }
+}
+
+.witch2 {
+    position: absolute;
+    width: 200px;
+    width: 200px;
+    bottom: 300px;
+    right: -100px;
+
+    animation: witch2-move 5s linear infinite;
+}
+
+@keyframes witch2-move {
+    0%
+    {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    40%
+    {
+        transform: translate(-1500px, -50px) rotateY(0deg);
+    }
+
+    40.1%
+    {
+        transform: translate(-1500px, -50px) rotateY(0deg);
+    }
+
+    50%
+    {
+        transform: translate(-1500px, -50px) rotateY(180deg);
+    }
+
+    50.1% 
+    {
+        transform: translate(-1500px, -50px) rotateY(180deg);
+    }
+    100%
+    {
+        transform: translate(1500px, 400px) rotateY(180deg);
+    }
+}
